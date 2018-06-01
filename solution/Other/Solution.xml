@@ -79,7 +79,85 @@
         </Address>
       </Addresses>
     </Publisher>
-    <RootComponents />
-    <MissingDependencies />
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="0" />
+      <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" behavior="0" />
+      <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="2" schemaName="preferredequipmentid" displayName="Installation/équipement privilégié" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="2" schemaName="defaultpricelevelid" displayName="Tarifs" parentSchemaName="account" parentDisplayName="Compte" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="territoryid" displayName="Secteur de vente" parentSchemaName="account" parentDisplayName="Compte" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="2" schemaName="defaultpricelevelid" displayName="Tarifs" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="2" schemaName="originatingleadid" displayName="Prospect d'origine" parentSchemaName="account" parentDisplayName="Compte" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="2" schemaName="preferredserviceid" displayName="Service privilégié" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="2" schemaName="originatingleadid" displayName="Prospect d'origine" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="26" schemaName="Tous les contacts" displayName="Tous les contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+        <Dependent key="10" type="60" displayName="Tableau de bord des contacts" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="26" schemaName="Tous les comptes" displayName="Tous les comptes" parentSchemaName="account" parentDisplayName="Compte" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+        <Dependent key="12" type="60" displayName="Tableau de bord des comptes" parentDisplayName="Compte" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="26" schemaName="Services actifs" displayName="Services actifs" parentSchemaName="service" parentDisplayName="Service" solution="msdynce_Service (9.0.5.56)" id="{2bd4de5e-a7b4-4f5d-8fde-eb3b62d8e2b2}" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="60" displayName="Tableau de bord des contacts" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+        <Dependent key="10" type="60" displayName="Tableau de bord des contacts" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="60" displayName="Tableau de bord des comptes" parentDisplayName="Compte" solution="msdynce_Service (9.0.5.56)" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+        <Dependent key="12" type="60" displayName="Tableau de bord des comptes" parentDisplayName="Compte" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="60" displayName="Informations" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="60" displayName="Informations" parentDisplayName="Compte" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="3" type="60" displayName="Informations" parentDisplayName="Compte" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="1" type="60" displayName="Informations" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
